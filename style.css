@@ -50,6 +50,13 @@ h4 {
   padding: 20px;
   text-align: center;
 }
+.info img {
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+.info img:hover {
+  filter: grayscale(0);
+}
 
 .icons {
   position: relative;
