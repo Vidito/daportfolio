@@ -317,3 +317,10 @@ h4 {
     opacity: 1;
   }
 }
+@media only screen and (max-width: 600px) {
+  .sign {
+    font-size: 2em;
+    left: 10rem;
+    top: 10rem;
+  }
+}
