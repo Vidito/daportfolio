@@ -115,6 +115,13 @@ h4 {
 
 .projects {
   height: 100vh;
+  /* background-color: #141114;
+  background-image: linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px),
+    linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px);
+  background-size: 58px 58px;
+  background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px; */
 }
 
 .sign {
@@ -141,6 +148,13 @@ h4 {
     -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
     0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
   animation: shine 2s forwards, flicker 3s infinite;
+}
+@media only screen and (max-width: 600px) {
+  .sign {
+    font-size: 2em;
+    left: 50%;
+    top: 50%;
+  }
 }
 
 @keyframes blink {
@@ -309,12 +323,5 @@ h4 {
 
   to {
     opacity: 1;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .sign {
-    font-size: 2em;
-    left: 50%;
-    top: 50%;
   }
 }
