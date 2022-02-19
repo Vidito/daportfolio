@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div class="behind">
+      <img src="1.jpg" alt="" />
+    </div> -->
+    <!-- The menu on the right -->
+    <div class="fixed-action-btn settings">
+      <a class="btn-floating pulse btn-large red darken-4">
+        <i class="large material-icons">settings</i>
+      </a>
+      <ul>
+        <li>
+          <a
+            href="projects.html"
+            class="btn-floating white tooltipped"
+            data-position="left"
+            data-tooltip="Projects"
+            ><i class="material-icons red-text text-darken-4"
+              >insert_chart</i
+            ></a
+          >
+        </li>
+
+        <li>
+          <a href="index.html" class="btn-floating white"
+            ><i
+              class="material-icons red-text text-darken-4 tooltipped"
+              data-position="left"
+              data-tooltip="Home"
+              >home</i
+            ></a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="middle">
+      <div class="form">
+        <div class="details">
+          <i class="fa-solid fa-envelope fa-2x"></i> example@email.com <br />
+          <i class="fa-solid fa-phone fa-2x"></i> 01234567
+        </div>
+        <form action="https://formspree.io/f/mnqwdgjw" method="POST">
+          <label>
+            Your email:
+            <input type="email" name="email" required class="validate" />
+          </label>
+          <label>
+            Your message:
+            <textarea name="message" required></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button type="submit" class="btn-large red">
+            <i class="material-icons right">send</i>Send
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      M.AutoInit();
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".fixed-action-btn");
+        var instances = M.FloatingActionButton.init(elems, {
+          direction: "bottom",
+          hoverEnabled: false,
+        });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".tooltipped");
+        var instances = M.Tooltip.init(elems, options);
+      });
+    </script>
+  </body>
+</html>

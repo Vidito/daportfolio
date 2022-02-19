@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div class="behind">
+      <img src="1.jpg" alt="" />
+    </div> -->
+    <!-- The menu on the right -->
+    <div class="fixed-action-btn settings">
+      <a class="btn-floating pulse btn-large red darken-4">
+        <i class="large material-icons">settings</i>
+      </a>
+      <ul>
+        <li>
+          <a
+            href="contact.html"
+            class="btn-floating white tooltipped"
+            data-position="left"
+            data-tooltip="Projects"
+            ><i class="material-icons red-text text-darken-4"
+              >insert_chart</i
+            ></a
+          >
+        </li>
+        <li>
+          <a
+            href="contact.html"
+            class="btn-floating red darken-4 tooltipped"
+            data-position="left"
+            data-tooltip="Contact"
+            ><i class="material-icons white-text">contact_mail</i></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="middle">
+      <!-- The main card in the middle -->
+
+      <div class="info">
+        <img class="responsive-img" src="me.png" width="250rem" />
+        <h3>Vahid Niamadpour</h3>
+        <h4>Data Analyst</h4>
+        <br />
+        <div class="icons">
+          <a href="https://github.com/Vidito"
+            ><i class="fa-brands fa-github-alt fa-3x github"></i
+          ></a>
+
+          <a href="https://www.youtube.com/channel/UC_aDkEvLjl4-ZUdqxauAHng"
+            ><i class="fa-brands fa-youtube fa-3x youtube"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/vahid-niamadpour-a3ba1a205/">
+            <i class="fa-brands fa-linkedin fa-3x linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      M.AutoInit();
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".fixed-action-btn");
+        var instances = M.FloatingActionButton.init(elems, {
+          direction: "bottom",
+          hoverEnabled: false,
+        });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".tooltipped");
+        var instances = M.Tooltip.init(elems, options);
+      });
+    </script>
+  </body>
+</html>
